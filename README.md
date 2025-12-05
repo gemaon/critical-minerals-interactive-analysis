@@ -24,34 +24,14 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 ## II. Key Findings
 
 ### 1. Australia's Lithium Dominance (37.5% Global Production)
-Interactive time series analysis revealed Australia overtook Chile as the world's largest lithium producer in 2014, reaching 88 mega tonnes (37.5% global share) by 2024. However, lithium export values only surpassed nickel in 2021, marking a strategic inflection point in Australia's mineral export composition.
-
-**Insight**: Raw spodumene concentrate shipments to China for processing create strategic dependency and forfeit high-value downstream opportunities in lithium hydroxide and carbonate production.
 
 ### 2. Geographic Concentration in Western Australia
-Spatial mapping with pan/zoom interactions showed Western Australia hosts the majority of lithium and nickel operations by production volume. REE production remains geographically dispersed across Queensland, New South Wales, and WA but at significantly smaller scales, representing untapped growth potential.
-
-**Insight**: Infrastructure investment should prioritise WA's existing mining clusters whilst supporting REE scaling across multiple states to diversify supply chains.
 
 ### 3. ESG Risks in Protected Areas
-Interactive spatial overlay of mine locations with CAPAD 2024 protected areas identified 8 operational sites in Western Australia with minor spatial overlap with conservation zones. Hover tooltips enabled precise identification of affected mines, minerals, and protected area types.
-
-**Insight**: Unmanaged ESG risks could undermine Australia's credibility with international partners (Japan, EU, South Korea, US) implementing stricter sustainable sourcing requirements.
 
 ---
 
-## III. Strategic Recommendations (A$1 Billion Allocation)
-
-| Priority | Allocation | Rationale |
-|----------|-----------|-----------|
-| **REE Scaling Across States** | A$300M (30%) | Support geographically distributed REE projects with offtake agreements to reduce Chinese processing dominance |
-| **Downstream Processing Infrastructure** | A$300M (30%) | Require domestic refining in offtake agreements to capture higher-value lithium hydroxide/carbonate production |
-| **WA Infrastructure Hub** | A$250M (25%) | Build on existing production clusters with shared processing facilities, ports, and logistics |
-| **ESG Safeguards & Monitoring** | A$150M (15%) | Mandate biodiversity assessments, Free Prior and Informed Consent protocols, and independent verification |
-
----
-
-## IV. Data Sources & Methodology
+## III. Data Sources & Methodology
 
 ### Datasets
 
@@ -72,7 +52,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## V. Technical Skills Demonstrated
+## IV. Technical Skills Demonstrated
 
 - **R Programming**: ggplot2 (Grammar of Graphics), Plotly (interactive charts), Shiny (web applications), sf (spatial analysis)
 - **Data Wrangling**: Multi-format integration (CSV, Excel, shapefiles), spatial joins, temporal aggregations
@@ -83,7 +63,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## VI. Tools & Technologies
+## V. Tools & Technologies
 
 - **Languages**: R (ggplot2, Plotly, dplyr, sf, leaflet)
 - **Frameworks**: Shiny (interactive dashboard deployment)
@@ -93,7 +73,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## VII. Repository Structure
+## VI. Repository Structure
 ```
 ├── 01_executive_report.pdf                         # Full analysis report
 ├── 02_interactive_dashboard_screenshot.png         # Shiny app interface
@@ -116,7 +96,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## VIII. Project Context
+## VII. Project Context
 
 Completed as BSAN7208 (Visual Analytics) at University of Queensland, demonstrating capabilities in interactive data visualisation, spatial analysis, and executive-level strategic communication applicable to sustainability consulting and commercial analytics roles.
 
