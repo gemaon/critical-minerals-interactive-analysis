@@ -23,11 +23,11 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 ## II. Key Findings
 
-### 1. Australia's Lithium Dominance (37.5% Global Production)
+# 1. Australia's Lithium Dominance (37.5% Global Production)
 
-### 2. Geographic Concentration in Western Australia
+# 2. Geographic Concentration in Western Australia
 
-### 3. ESG Risks in Protected Areas
+# 3. ESG Risks in Protected Areas
 
 ---
 
