@@ -51,36 +51,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## IV. Interactive Visualisation Features
-
-**Heer & Shneiderman Taxonomy Implementation**:
-- **Filter**: Commodity isolation in time series (Figures 1, 2) enables focused trend analysis
-- **Details-on-demand**: Tooltips reveal mine names, production volumes, protected area categories without visual clutter
-- **Pan/Zoom**: Spatial exploration in maps (Figures 3, 5) enables granular inspection of Western Australian mining clusters and protected area overlaps
-- **Select**: Hover interactions highlight specific data points across linked visualisations
-
-### Grammar of Graphics (ggplot2)
-
-**Figure 4 - Global Lithium Production (Stacked Area Chart)**:
-- **Data**: Annual lithium production (mega tonnes) by country, 2004-2024
-- **Layers**: `geom_area()` with white strokes for country separation; `geom_vline()` annotating Australia's 2014 overtake point
-- **Scales**: Continuous y-axis (production volume); temporal x-axis; categorical colour scale
-- **Coordinates**: Default Cartesian system
-- **Facets**: Single panel showing all countries
-
-**Design Rationale**: Stacked area chart follows Munzner's principle of using area marks for part-to-whole relationships. Saturated blue highlights Australia whilst muting competitors in beige/grey (Ware's selective attention principle). Annotation reduces cognitive load by directing readers to the 2014 inflection point (Tufte).
-
-### Design Improvements from Assignment 1
-
-**Accessibility**: Replaced blue-red-green palette with blue-red-orange to accommodate colourblind users (~8% of males). Orange encoding for mines in protected areas (Figure 5) uses colour as a risk signal (Ware, 2020).
-
-**Data-Ink Ratio**: Simplified fiscal year labels ("1989-90" → "1990"), reduced y-axis ticks, lightened gridlines to 20% opacity (Tufte, 2001). Removed redundant chart elements whilst preserving reference structure (Few, 2012).
-
-**Subtitles**: Added italicised subtitles communicating key findings ("Lithium exports surge by 7.6x from 2016 to 2024") following Few's guidance that titles should convey insights, not just label content.
-
----
-
-## V. Data Sources & Methodology
+## IV. Data Sources & Methodology
 
 ### Datasets
 
@@ -101,7 +72,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## VI. Technical Skills Demonstrated
+## V. Technical Skills Demonstrated
 
 - **R Programming**: ggplot2 (Grammar of Graphics), Plotly (interactive charts), Shiny (web applications), sf (spatial analysis)
 - **Data Wrangling**: Multi-format integration (CSV, Excel, shapefiles), spatial joins, temporal aggregations
@@ -112,7 +83,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## VII. Tools & Technologies
+## VI. Tools & Technologies
 
 - **Languages**: R (ggplot2, Plotly, dplyr, sf, leaflet)
 - **Frameworks**: Shiny (interactive dashboard deployment)
@@ -122,7 +93,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## VIII. Repository Structure
+## VII. Repository Structure
 ```
 ├── 01_executive_report.pdf                         # Full analysis report
 ├── 02_interactive_dashboard_screenshot.png         # Shiny app interface
@@ -145,7 +116,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## X. Project Context
+## VIII. Project Context
 
 Completed as BSAN7208 (Visual Analytics) at University of Queensland, demonstrating capabilities in interactive data visualisation, spatial analysis, and executive-level strategic communication applicable to sustainability consulting and commercial analytics roles.
 
