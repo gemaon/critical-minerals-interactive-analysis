@@ -44,11 +44,11 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 ### Technical Challenges
 
-**Spatial Data Processing**: CAPAD shapefiles exceeded 20MB, requiring `sf` package for polygon transformations and overlay operations. Focused on State-level data to manage processing loads whilst maintaining analytical precision.
+- **Spatial Data Processing**: CAPAD shapefiles exceeded 20MB, requiring `sf` package for polygon transformations and overlay operations. Focused on State-level data to manage processing loads whilst maintaining analytical precision.
 
-**Interactive Conversion**: Converting static ggplot2 to Plotly introduced rendering inconsistencies - dual legends disappeared, subtitles required manual restoration via workaround code. Spatial overlays in Figure 5 resulted in 15-20 second load times due to complex geometries.
+- **Interactive Conversion**: Converting static ggplot2 to Plotly introduced rendering inconsistencies - dual legends disappeared, subtitles required manual restoration via workaround code. Spatial overlays in Figure 5 resulted in 15-20 second load times due to complex geometries.
 
-**Data Quality Limitations**: GA Operating Mines dataset omits smaller operations; some production volumes confidential for commercial reasons, requiring estimation. Spatial accuracy indicates proximity but not actual environmental impact - true ESG verification requires field assessments beyond this study's scope.
+- **Data Quality Limitations**: GA Operating Mines dataset omits smaller operations; some production volumes confidential for commercial reasons, requiring estimation. Spatial accuracy indicates proximity but not actual environmental impact - true ESG verification requires field assessments beyond this study's scope.
 
 ---
 
