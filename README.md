@@ -75,22 +75,20 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 ## VI. Repository Structure
 ```
-├── 01_executive_report.pdf                         # Full analysis report
-├── 02_interactive_dashboard_screenshot.png         # Shiny app interface
-├── 03_key_visualisations/
+├── 01_executive_report.pdf                                            # Full analysis report
+├── 02_ggplot2_visualisations.R                                        # Static chart generation with Grammar of Graphics
+├── 03_interactive_shiny_app.R                                         # Deployed Shiny application code
+├── visualisations/                                                    # PNG exports of key charts
+│   ├── australia_mines_spatial_map.png
+│   ├── export_values_time_series.png
 │   ├── export_volumes_time_series.png
 │   ├── global_lithium_production_stacked_area.png
-│   ├── australia_mines_spatial_map.png
 │   └── wa_protected_areas_overlay.png
-├── shiny_app/
-│   ├── app.R                                       # Deployed Shiny application code
-│   └── README.md                                   # Deployment instructions
-├── r_code/
-│   ├── 01_ggplot2_visualisations.R                 # Static chart generation with Grammar of Graphics
-│   └── 02_interactive_components.R                 # Plotly and Shiny interactivity implementation
-├── appendices/
-│   ├── grammar_of_graphics_analysis.pdf            # ggplot2 layer breakdown and design rationale
-│   └── design_evaluation.pdf                       # Munzner/Bertin/Tufte critique and improvements
+├── raw_datasets/                                                      # Source data files
+│   ├── Aus DIS resources-and-energy-quarterly-june-2025-forecast-data.xlsx
+│   ├── Aus DIS resources-and-energy-quarterly-june-2025-historical-data.xlsx
+│   ├── GA Australian_Operating_Mines_2024_2.xlsx
+│   └── lithium-production.csv
 └── README.md
 ```
 
