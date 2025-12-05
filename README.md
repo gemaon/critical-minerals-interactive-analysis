@@ -98,7 +98,5 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 Completed as BSAN7208 (Visual Analytics) at University of Queensland, demonstrating capabilities in interactive data visualisation, spatial analysis, and executive-level strategic communication applicable to sustainability consulting and commercial analytics roles.
 
-**Video Presentation**: 15-minute stakeholder presentation demonstrating interactive features, addressing technical challenges, and discussing future directions (available upon request).
-
 **Author**: Georgy Onishi  
 **Completion Date**: October 2025
