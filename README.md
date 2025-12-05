@@ -5,7 +5,7 @@ Interactive visualisation analysis supporting Export Finance Australia's A$1 bil
 
 ---
 
-## Business Context
+## I. Business Context
 
 Export Finance Australia manages a A$1 billion expansion of the Critical Minerals Facility (announced April 2025) to strengthen Australia's role in clean energy supply chains. This analysis evaluated strategic allocation across lithium, nickel, and rare earth elements (REEs) to maximise value creation whilst mitigating environmental and social risks aligned with UN Sustainable Development Goals 7, 9, and 13.
 
@@ -13,7 +13,15 @@ Export Finance Australia manages a A$1 billion expansion of the Critical Mineral
 
 ---
 
-## Key Findings
+### 🔗 Live Interactive Dashboard
+
+**Access the full Shiny application**: https://c7cq5t-george-onishi.shinyapps.io/shiny_deployment/
+
+Features include pan/zoom spatial maps, commodity filtering, tooltip-based details-on-demand, and downloadable data tables showing mines overlapping protected areas.
+
+---
+
+## II. Key Findings
 
 ### 1. Australia's Lithium Dominance (37.5% Global Production)
 Interactive time series analysis revealed Australia overtook Chile as the world's largest lithium producer in 2014, reaching 88 mega tonnes (37.5% global share) by 2024. However, lithium export values only surpassed nickel in 2021, marking a strategic inflection point in Australia's mineral export composition.
@@ -32,7 +40,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## Strategic Recommendations (A$1 Billion Allocation)
+## III. Strategic Recommendations (A$1 Billion Allocation)
 
 | Priority | Allocation | Rationale |
 |----------|-----------|-----------|
@@ -43,9 +51,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## Technical Implementation
-
-### Interactive Visualisation Features
+## IV. Interactive Visualisation Features
 
 **Heer & Shneiderman Taxonomy Implementation**:
 - **Filter**: Commodity isolation in time series (Figures 1, 2) enables focused trend analysis
@@ -74,7 +80,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## Data Sources & Methodology
+## V. Data Sources & Methodology
 
 ### Datasets
 
@@ -95,7 +101,7 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## Technical Skills Demonstrated
+## VI. Technical Skills Demonstrated
 
 - **R Programming**: ggplot2 (Grammar of Graphics), Plotly (interactive charts), Shiny (web applications), sf (spatial analysis)
 - **Data Wrangling**: Multi-format integration (CSV, Excel, shapefiles), spatial joins, temporal aggregations
@@ -106,19 +112,19 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## Tools & Technologies
+## VII. Tools & Technologies
 
 - **Languages**: R (ggplot2, Plotly, dplyr, sf, leaflet)
 - **Frameworks**: Shiny (interactive dashboard deployment)
 - **Spatial Tools**: sf package, CAPAD protected areas database, ozmaps
 - **Data Processing**: readxl, tidyverse, spatial geometry validation
-- **Deployment**: Shiny web application with multi-tab interface
+- **Deployment**: shinyapps.io (cloud hosting)
 
 ---
 
-## Repository Structure
+## VIII. Repository Structure
 ```
-├── 01_executive_report.pdf                         # Full analysis report (7 pages)
+├── 01_executive_report.pdf                         # Full analysis report
 ├── 02_interactive_dashboard_screenshot.png         # Shiny app interface
 ├── 03_key_visualisations/
 │   ├── export_volumes_time_series.png
@@ -126,13 +132,11 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 │   ├── australia_mines_spatial_map.png
 │   └── wa_protected_areas_overlay.png
 ├── shiny_app/
-│   ├── app.R                                       # Deployed Shiny application
-│   ├── data/                                       # Processed datasets
+│   ├── app.R                                       # Deployed Shiny application code
 │   └── README.md                                   # Deployment instructions
 ├── r_code/
-│   ├── 01_data_preparation.R                       # Data cleaning and spatial joins
-│   ├── 02_ggplot2_visualisations.R                 # Static chart generation
-│   └── 03_interactive_components.R                 # Plotly and Shiny interactivity
+│   ├── 01_ggplot2_visualisations.R                 # Static chart generation with Grammar of Graphics
+│   └── 02_interactive_components.R                 # Plotly and Shiny interactivity implementation
 ├── appendices/
 │   ├── grammar_of_graphics_analysis.pdf            # ggplot2 layer breakdown and design rationale
 │   └── design_evaluation.pdf                       # Munzner/Bertin/Tufte critique and improvements
@@ -141,26 +145,11 @@ Interactive spatial overlay of mine locations with CAPAD 2024 protected areas id
 
 ---
 
-## Key Learnings
-
-**Spatial Data Scalability**: Large shapefiles (20MB+) require strategic subset selection and geometry simplification for interactive applications. State-level filtering balanced analytical detail with performance constraints.
-
-**Plotly Conversion Challenges**: Direct `ggplotly()` conversion doesn't preserve all ggplot2 aesthetics. Custom tooltip formatting via `aes(text = ...)` and manual subtitle restoration required to maintain visualisation quality.
-
-**Accessibility by Default**: Implementing colourblind-safe palettes upfront (blue-orange-purple) prevented rework and expanded audience reach without sacrificing visual effectiveness.
-
-**Executive Communication**: Interactive features enable exploration, but strategic recommendations still require clear written synthesis. Tooltips provide depth; subtitles provide direction.
-
----
-
-## Project Context
+## X. Project Context
 
 Completed as BSAN7208 (Visual Analytics) at University of Queensland, demonstrating capabilities in interactive data visualisation, spatial analysis, and executive-level strategic communication applicable to sustainability consulting and commercial analytics roles.
 
 **Video Presentation**: 15-minute stakeholder presentation demonstrating interactive features, addressing technical challenges, and discussing future directions (available upon request).
 
----
-
 **Author**: Georgy Onishi  
-**Completion Date**: October 2025  
-**Word Count**: 2,397 (report body); 7 pages + appendices
+**Completion Date**: October 2025
