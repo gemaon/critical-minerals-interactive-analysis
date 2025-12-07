@@ -37,10 +37,10 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 | Source | Dataset | Details |
 |--------|---------|---------|
-| **Dept of Industry, Science & Resources (DISR)** | [Resources and Energy Quarterly (June 2025)](raw_datasets/Aus DIS resources-and-energy-quarterly-june-2025-historical-data.xlsx) | Historical export volumes and values for critical minerals (1990-2024) |
-| **Energy Institute** | Statistical Review of World Energy (2025) | Global lithium production by country (2004-2024) |
-| **Geoscience Australia** | Australian Operating Mines 2024 | Mine locations, commodities, production volumes |
-| **Dept of Climate Change (DCCEEW)** | CAPAD 2024 | Protected areas database (terrestrial/marine zones with IUCN categories) |
+| **Dept of Industry, Science & Resources (DISR)** | [Resources and Energy Quarterly (June 2025)](raw_datasets/resources-and-energy-quarterly-june-2025-historical-data.xlsx) | Historical export volumes and values for critical minerals (1990-2024) |
+| **Energy Institute** | [Statistical Review of World Energy (2025)](raw_datasets/lithium-production.csv) | Global lithium production by country (2004-2024) |
+| **Geoscience Australia** | [Australian Operating Mines 2024](raw_datasets/Australian_Operating_Mines_2024_2.xlsx) | Mine locations, commodities, production volumes |
+| **Dept of Climate Change (DCCEEW)** | [CAPAD 2024](https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024) | Protected areas database (terrestrial/marine zones with IUCN categories) |
 
 ### Technical Challenges
 
