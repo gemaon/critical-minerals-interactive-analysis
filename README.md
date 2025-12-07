@@ -1,7 +1,7 @@
 # Critical Minerals Interactive Analysis
 **Data-Driven Investment Strategy for Australian Critical Minerals Using R (ggplot2, Plotly, Shiny)**
 
-I created an interactive R visualisation platform to help Export Finance Australia strategically allocate A$1 billion in critical minerals funding by analysing Australia's lithium dominance, geographic concentration risks, and environmental challenges through spatial data overlay techniques.
+I created an interactive R visualisation platform to help Export Finance Australia strategically allocate A$1 billion in critical minerals funding. The analysis looks at Australia's critical minerals section across four dimensions: export dynamics, global competitive position, geographic concentration, and environmental challenges.
 
 ---
 
@@ -24,10 +24,13 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 ## II. Key Findings
 
 **Australia's Lithium Dominance**: Australia produces 37.5% of global lithium (88 megatonnes, 2024), overtaking Chile in 2014. However, most exports are raw spodumene concentrate shipped to China for processing, creating strategic dependency. **Recommendation**: Allocate 30% (A$300M) to downstream processing infrastructure to capture higher-value lithium hydroxide and carbonate production.
+![static_visualisations/global_lithium_production_stacked_area.png]
 
 **Geographic Concentration**: Western Australia hosts the majority of lithium and nickel operations by production volume, whilst REE production remains geographically dispersed at smaller scales across Queensland, New South Wales, and WA. **Recommendation**: Allocate 30% (A$300M) to REE infrastructure across multiple states and 25% (A$250M) to WA mining cluster infrastructure (ports, logistics, renewable power).
+![static_visualisations/australia_mines_spatial_map.png]
 
 **ESG Risks**: Spatial overlay analysis identified 8 operational mines overlapping CAPAD protected areas in Western Australia, raising concerns about biodiversity and Indigenous land rights that could undermine credibility with international partners (Japan, EU, South Korea, US). **Recommendation**: Allocate 15% (A$150M) to mandatory ESG safeguards including biodiversity assessments, Free Prior and Informed Consent protocols, and independent verification.
+![static_visualisations/wa_protected_areas_overlay.png]
 ---
 
 ## III. Data Sources & Methodology
