@@ -48,24 +48,13 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 **Interactive Pipeline**: I converted static ggplot2 charts to interactive Plotly visualisations with tooltips and filtering, then deployed via Shiny. Resolved rendering issues (disappeared legends, subtitles) through custom code workarounds and optimised 20MB shapefile load times via geometry simplification.
 
-**Data Wrangling**: I processed multi-format data (CSV, Excel, shapefiles), standardised coordinate reference systems to WGS84, and harmonised temporal data across fiscal/calendar years (1990-2025).
+**Data Wrangling**: I processed multi-format data (CSV, Excel, shapefiles), conducted spatial joins, standardised coordinate reference systems to WGS84, and harmonised temporal data across fiscal/calendar years (1990-2025).
 
 **Shiny Deployment**: I deployed the application to shinyapps.io, managing dependencies across multiple R packages (ggplot2, plotly, leaflet, sf) and ensuring all datasets loaded correctly in the cloud environment. Addressed file path issues when transitioning from local development to hosted deployment and optimised reactive rendering to handle large spatial datasets without exceeding free tier memory limits.
 
 ---
 
-## IV. Technical Skills Demonstrated
-
-- **R Programming**: ggplot2 (Grammar of Graphics), Plotly (interactive charts), Shiny (web applications), sf (spatial analysis)
-- **Data Wrangling**: Multi-format integration (CSV, Excel, shapefiles), spatial joins, temporal aggregations
-- **Visualisation Theory**: Munzner's nested model, Bertin's visual variables, Tufte's data-ink principles, Ware's perceptual encodings
-- **Interaction Design**: Heer & Shneiderman taxonomy implementation (filter, zoom, tooltip, select)
-- **Geospatial Analysis**: Spatial overlay operations, coordinate reference systems, protected area mapping
-- **Business Communication**: Executive-level recommendations, SDG alignment, strategic allocation frameworks
-
----
-
-## V. Tools & Technologies
+## IV. Tools & Technologies
 
 - **Languages**: R (ggplot2, Plotly, dplyr, sf, leaflet)
 - **Frameworks**: Shiny (interactive dashboard deployment)
@@ -75,7 +64,7 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 ---
 
-## VI. Repository Structure
+## V. Repository Structure
 ```
 ├── 01_executive_report.pdf                                            # Full analysis report
 ├── 02_ggplot2_visualisations.R                                        # Static chart generation with Grammar of Graphics
@@ -96,7 +85,7 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 ---
 
-## VII. Project Context
+## VI. Project Context
 
 Completed as BSAN7208 (Visual Analytics) at University of Queensland, demonstrating capabilities in interactive data visualisation, spatial analysis, and executive-level strategic communication applicable to sustainability consulting and commercial analytics roles.
 
