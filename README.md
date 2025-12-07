@@ -44,11 +44,13 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 ### Technical Challenges
 
-- **Spatial Data Processing**: CAPAD shapefiles exceeded 20MB, requiring `sf` package for polygon transformations and overlay operations. Focused on State-level data to manage processing loads whilst maintaining analytical precision.
+**Spatial Overlay Analysis**: I integrated three independent spatial datasets to identify ESG risks—mine coordinates (Geoscience Australia), protected area polygons (CAPAD 20MB shapefile), and Australia's base map (`rnaturalearth` package). Using the `sf` package, I performed spatial joins (`st_join` with `st_within`) to identify 8 mines overlapping conservation zones in Western Australia.
 
-- **Interactive Conversion**: Converting static ggplot2 to Plotly introduced rendering inconsistencies - dual legends disappeared, subtitles required manual restoration via workaround code. Spatial overlays in Figure 5 resulted in 15-20 second load times due to complex geometries.
+**Interactive Pipeline**: I converted static ggplot2 charts to interactive Plotly visualisations with tooltips and filtering, then deployed via Shiny. Resolved rendering issues (disappeared legends, subtitles) through custom code workarounds and optimised 20MB shapefile load times via geometry simplification.
 
-- **Data Quality Limitations**: GA Operating Mines dataset omits smaller operations; some production volumes confidential for commercial reasons, requiring estimation. Spatial accuracy indicates proximity but not actual environmental impact - true ESG verification requires field assessments beyond this study's scope.
+**Data Wrangling**: I processed multi-format data (CSV, Excel, shapefiles), standardised coordinate reference systems to WGS84, and harmonised temporal data across fiscal/calendar years (1990-2025).
+
+**Shiny Deployment**: I deployed the application to shinyapps.io, managing dependencies across multiple R packages (ggplot2, plotly, leaflet, sf) and ensuring all datasets loaded correctly in the cloud environment. Addressed file path issues when transitioning from local development to hosted deployment and optimised reactive rendering to handle large spatial datasets without exceeding free tier memory limits.
 
 ---
 
