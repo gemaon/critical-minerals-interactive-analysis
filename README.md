@@ -29,11 +29,11 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 **Geographic Concentration**: Western Australia hosts the majority of lithium and nickel operations by production volume, whilst REE production remains geographically dispersed at smaller scales across Queensland, New South Wales, and WA. **Recommendation**: Allocate 30% (A$300M) to REE infrastructure across multiple states and 25% (A$250M) to WA mining cluster infrastructure (ports, logistics, renewable power).
 
-![static_visualisations/australia_mines_spatial_map.png]
+![australia_mines_spatial_map](static_visualisations/australia_mines_spatial_map.png)
 
 **ESG Risks**: Spatial overlay analysis identified 8 operational mines overlapping CAPAD protected areas in Western Australia, raising concerns about biodiversity and Indigenous land rights that could undermine credibility with international partners (Japan, EU, South Korea, US). **Recommendation**: Allocate 15% (A$150M) to mandatory ESG safeguards including biodiversity assessments, Free Prior and Informed Consent protocols, and independent verification.
 
-![static_visualisations/wa_protected_areas_overlay.png]
+![wa_protected_areas_overlay](static_visualisations/wa_protected_areas_overlay.png)
 ---
 
 ## III. Data Sources & Methodology
