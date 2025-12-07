@@ -1,7 +1,7 @@
 # Critical Minerals Interactive Analysis
 **Data-Driven Investment Strategy for Australian Critical Minerals Using R (ggplot2, Plotly, Shiny)**
 
-Interactive visualisation analysis supporting Export Finance Australia's A$1 billion Critical Minerals Facility expansion, demonstrating Australia's strategic position in global lithium supply chains whilst identifying ESG risks through spatial overlay analysis.
+I created an interactive R visualisation platform to help Export Finance Australia strategically allocate A$1 billion in critical minerals funding by analysing Australia's lithium dominance, geographic concentration risks, and environmental challenges through spatial data overlay techniques.
 
 ---
 
