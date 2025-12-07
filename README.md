@@ -29,6 +29,8 @@ Features include pan/zoom spatial maps, commodity filtering, tooltip-based detai
 
 **ESG Risks**: Spatial overlay analysis identified 8 operational mines overlapping CAPAD protected areas in Western Australia, raising concerns about biodiversity and Indigenous land rights that could undermine credibility with international partners (Japan, EU, South Korea, US). **Recommendation**: Allocate 15% (A$150M) to mandatory ESG safeguards including biodiversity assessments, Free Prior and Informed Consent protocols, and independent verification.
 
+Refer to the [Full Report](01_executive_report.pdf) to see my  complete analysis and detailed explanation of findings and recommendations.
+
 ---
 
 ## III. Data Sources & Methodology
