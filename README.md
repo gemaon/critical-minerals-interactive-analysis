@@ -3,37 +3,35 @@
 
 I created an interactive R visualisation platform to help Export Finance Australia strategically allocate A$1 billion in critical minerals funding. The analysis looks at Australia's critical minerals section across four dimensions: export dynamics, global competitive position, geographic concentration, and environmental challenges.
 
----
+### 🔗 Live Interactive Dashboard (Shiny): https://c7cq5t-george-onishi.shinyapps.io/shiny_deployment/
 
-## I. Business Context
+## 1. Business Context
 
-Export Finance Australia manages a A$1 billion expansion of the Critical Minerals Facility (announced April 2025) to strengthen Australia's role in clean energy supply chains. This analysis evaluated strategic allocation across lithium, nickel, and rare earth elements (REEs) to maximise value creation whilst mitigating environmental and social risks aligned with UN Sustainable Development Goals 7, 9, and 13.
+This project builds an interactive R platform to guide strategic investment across lithium, nickel, and rare earths.  
+Key outputs:
+- Interactive Shiny dashboard with commodity filtering and spatial overlays  
+- Spatial ESG risk detection via `sf` (8 mines overlapping protected areas)
+- Time-series analysis of export trends (1990–2024)  
+- Comparative global production analysis for lithium (2004–2024)  
 
-**Problem Statement**: How should EFA strategically allocate A$1 billion to maximise Australia's contribution to global critical minerals supply chains whilst addressing biodiversity and Indigenous land rights concerns?
+## 2. Key Findings
 
----
+- Lithium: Australia leads global output but remains dependent on offshore processing → prioritise downstream capacity.
+- Nickel: High concentration in WA → invest in regional infrastructure.
+- REEs: More geographically distributed → multi-state investment.
+- ESG: Spatial overlay reveals conservation-area exposure → fund safeguards and verification.
 
-### 🔗 Live Interactive Dashboard
+Refer to the [Full Report](01_executive_report.pdf) to see my complete analysis, findings, and recommendations.
 
-**Access the full Shiny application**: https://c7cq5t-george-onishi.shinyapps.io/shiny_deployment/
+## 3. Data Sources & Methodology
 
-Features include pan/zoom spatial maps, commodity filtering, tooltip-based details-on-demand, and downloadable data tables showing mines overlapping protected areas.
+### Technical Highlights
 
----
-
-## II. Key Findings
-
-**Australia's Lithium Dominance**: Australia produces 37.5% of global lithium (88 megatonnes, 2024), overtaking Chile in 2014. However, most exports are raw spodumene concentrate shipped to China for processing, creating strategic dependency. **Recommendation**: Allocate 30% (A$300M) to downstream processing infrastructure to capture higher-value lithium hydroxide and carbonate production.
-
-**Geographic Concentration**: Western Australia hosts the majority of lithium and nickel operations by production volume, whilst REE production remains geographically dispersed at smaller scales across Queensland, New South Wales, and WA. **Recommendation**: Allocate 30% (A$300M) to REE infrastructure across multiple states and 25% (A$250M) to WA mining cluster infrastructure (ports, logistics, renewable power).
-
-**ESG Risks**: Spatial overlay analysis identified 8 operational mines overlapping CAPAD protected areas in Western Australia, raising concerns about biodiversity and Indigenous land rights that could undermine credibility with international partners (Japan, EU, South Korea, US). **Recommendation**: Allocate 15% (A$150M) to mandatory ESG safeguards including biodiversity assessments, Free Prior and Informed Consent protocols, and independent verification.
-
-Refer to the [Full Report](01_executive_report.pdf) to see my  complete analysis and detailed explanation of findings and recommendations.
-
----
-
-## III. Data Sources & Methodology
+- Spatial analysis using `sf` (`st_join`, `st_within`)
+- Time-series modelling of export dynamics
+- Geometry simplification to optimise Shiny load times
+- Plotly conversion for interactive charts
+- Full deployment pipeline to shinyapps.io with dependency management
 
 ### Datasets
 
@@ -44,19 +42,7 @@ Refer to the [Full Report](01_executive_report.pdf) to see my  complete analysis
 | **Geoscience Australia** | [Australian Operating Mines 2024](raw_datasets/Australian_Operating_Mines_2024_2.xlsx) | Mine locations, commodities, production volumes |
 | **Dept of Climate Change (DCCEEW)** | [CAPAD 2024](https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024) | Protected areas database (terrestrial/marine zones with IUCN categories) |
 
-### Technical Challenges
-
-**Spatial Overlay Analysis**: I integrated three independent spatial datasets to identify ESG risks—mine coordinates (Geoscience Australia), protected area polygons (CAPAD 20MB shapefile), and Australia's base map (`rnaturalearth` package). Using the `sf` package, I performed spatial joins (`st_join` with `st_within`) to identify 8 mines overlapping conservation zones in Western Australia.
-
-**Interactive Pipeline**: I converted static ggplot2 charts to interactive Plotly visualisations with tooltips and filtering, then deployed via Shiny. Resolved rendering issues (disappeared legends, subtitles) through custom code workarounds and optimised 20MB shapefile load times via geometry simplification.
-
-**Data Wrangling**: I processed multi-format data (CSV, Excel, shapefiles), conducted spatial joins, standardised coordinate reference systems to WGS84, and harmonised temporal data across fiscal/calendar years (1990-2025).
-
-**Shiny Deployment**: I deployed the application to shinyapps.io, managing dependencies across multiple R packages (ggplot2, plotly, leaflet, sf) and ensuring all datasets loaded correctly in the cloud environment. Addressed file path issues when transitioning from local development to hosted deployment and optimised reactive rendering to handle large spatial datasets without exceeding free tier memory limits.
-
----
-
-## IV. Tools & Technologies
+## 4. Tools & Technologies
 
 - **Languages**: R (ggplot2, Plotly, dplyr, sf, leaflet)
 - **Frameworks**: Shiny (interactive dashboard deployment)
@@ -64,9 +50,7 @@ Refer to the [Full Report](01_executive_report.pdf) to see my  complete analysis
 - **Data Processing**: readxl, tidyverse, spatial geometry validation
 - **Deployment**: shinyapps.io (cloud hosting)
 
----
-
-## V. Repository Structure
+## 5. Repository Structure
 ```
 ├── 01_executive_report.pdf                                            # Full analysis report
 ├── 02_ggplot2_visualisations.R                                        # Static chart generation with Grammar of Graphics
@@ -87,7 +71,7 @@ Refer to the [Full Report](01_executive_report.pdf) to see my  complete analysis
 
 ---
 
-## VI. Project Context
+## 6. Project Context
 
 Completed as BSAN7208 (Visual Analytics) at University of Queensland, demonstrating capabilities in interactive data visualisation, spatial analysis, and executive-level strategic communication applicable to sustainability consulting and commercial analytics roles.
 
