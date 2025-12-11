@@ -3,7 +3,7 @@
 
 I created an interactive R visualisation platform to help Export Finance Australia strategically allocate A$1 billion in critical minerals funding. The analysis looks at Australia's critical minerals section across four dimensions: export dynamics, global competitive position, geographic concentration, and environmental challenges.
 
-### 🔗 Live Interactive Dashboard (Shiny): https://c7cq5t-george-onishi.shinyapps.io/shiny_deployment/
+### 🔗 Live Interactive Dashboard: https://c7cq5t-george-onishi.shinyapps.io/shiny_deployment/
 
 ## 1. Business Context
 
