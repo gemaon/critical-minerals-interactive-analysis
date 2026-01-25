@@ -109,7 +109,7 @@ ggplot() +
 
 ### a) Export Dynamics (1990-2024)
 
-<img src="visualisations/export_values_time_series.png" width="65%" height="65%">
+<img src="static_visualisations/export_values_time_series.png" width="65%" height="65%">
 
 **Finding**: Lithium exports grew 760% from 2016-2024 (electric vehicle battery demand boom) whilst nickel remained stable → Lithium offers highest growth potential but highest volatility risk.
 
@@ -117,7 +117,7 @@ ggplot() +
 
 ### b) Global Competitive Position
 
-<img src="visualisations/global_lithium_production_stacked_area.png" width="65%" height="65%">
+<img src="static_visualisations/global_lithium_production_stacked_area.png" width="65%" height="65%">
 
 **Finding**: Australia produces 38% of global lithium (52 Mt in 2024) but exports 95% as unprocessed spodumene concentrate → Downstream refining investment critical to capture value chain.
 
@@ -125,7 +125,7 @@ ggplot() +
 
 ### c) Spatial Concentration Risk
 
-<img src="visualisations/australia_mines_spatial_map.png" width="65%" height="65%">
+<img src="static_visualisations/australia_mines_spatial_map.png" width="65%" height="65%">
 
 **Finding**: 82% of nickel production concentrated in single WA region (Kalgoorlie-Esperance) → Infrastructure investment should prioritise regional rail/port capacity and shared processing facilities.
 
@@ -133,7 +133,7 @@ ggplot() +
 
 ### d) Environmental Compliance Screening
 
-<img src="visualisations/wa_protected_areas_overlay.png" width="65%" height="65%">
+<img src="static_visualisations/wa_protected_areas_overlay.png" width="65%" height="65%">
 
 **ESG Risk Detection**: Spatial analysis (`sf::st_within()`) identified 8 operating mines within IUCN-protected areas → Require enhanced environmental monitoring, indigenous consultation protocols, and independent verification as conditions for CMF funding.
 
@@ -177,7 +177,7 @@ ggplot() +
 ├── 01_executive_report.pdf                        # Full analysis and recommendations
 ├── 02_ggplot2_visualisations.R                    # Static chart generation
 ├── 03_interactive_shiny_app.R                     # Deployed dashboard code
-├── visualisations/                                # PNG exports
+├── static_visualisations/                                # PNG exports
 │   ├── australia_mines_spatial_map.png
 │   ├── export_values_time_series.png
 │   ├── export_volumes_time_series.png
